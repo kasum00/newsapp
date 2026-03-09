@@ -1,0 +1,20 @@
+package com.huyen.newsapp.data.local
+
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity(tableName = "articles")
+
+data class ArticleEntity(
+
+    @PrimaryKey
+    val url: String,
+
+    val title: String,
+
+    val description: String?,
+
+    val image: String?,
+
+    val publishedAt: String
+)
